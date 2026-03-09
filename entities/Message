@@ -1,0 +1,41 @@
+{
+    "name": "Message",
+    "type": "object",
+    "properties": {
+        "facility_id": {
+            "type": "string"
+        },
+        "facility_name": {
+            "type": "string"
+        },
+        "sender_email": {
+            "type": "string"
+        },
+        "sender_name": {
+            "type": "string"
+        },
+        "content": {
+            "type": "string"
+        },
+        "is_from_facility": {
+            "type": "boolean",
+            "default": false
+        },
+        "read": {
+            "type": "boolean",
+            "default": false
+        },
+        "attachments": {
+            "type": "array",
+            "items": {
+                "type": "string"
+            }
+        }
+    },
+    "required": [
+        "facility_id",
+        "facility_name",
+        "sender_email",
+        "content"
+    ]
+}

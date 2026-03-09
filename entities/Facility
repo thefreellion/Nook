@@ -1,0 +1,119 @@
+{
+    "name": "Facility",
+    "type": "object",
+    "properties": {
+        "name": {
+            "type": "string"
+        },
+        "type": {
+            "type": "string",
+            "enum": [
+                "Assisted Living",
+                "Memory Care",
+                "Independent Living",
+                "Adult Family Home",
+                "Skilled Nursing"
+            ]
+        },
+        "description": {
+            "type": "string"
+        },
+        "address": {
+            "type": "string"
+        },
+        "city": {
+            "type": "string"
+        },
+        "state": {
+            "type": "string"
+        },
+        "zip": {
+            "type": "string"
+        },
+        "phone": {
+            "type": "string"
+        },
+        "email": {
+            "type": "string"
+        },
+        "website": {
+            "type": "string"
+        },
+        "starting_price": {
+            "type": "number"
+        },
+        "max_price": {
+            "type": "number"
+        },
+        "capacity": {
+            "type": "number"
+        },
+        "beds_available": {
+            "type": "number"
+        },
+        "rating": {
+            "type": "number"
+        },
+        "review_count": {
+            "type": "number"
+        },
+        "images": {
+            "type": "array",
+            "items": {
+                "type": "string"
+            }
+        },
+        "amenities": {
+            "type": "array",
+            "items": {
+                "type": "string"
+            }
+        },
+        "care_services": {
+            "type": "array",
+            "items": {
+                "type": "string"
+            }
+        },
+        "certifications": {
+            "type": "array",
+            "items": {
+                "type": "string"
+            }
+        },
+        "insurance_accepted": {
+            "type": "array",
+            "items": {
+                "type": "string"
+            }
+        },
+        "nurse_ratio": {
+            "type": "string"
+        },
+        "care_24_7": {
+            "type": "boolean"
+        },
+        "virtual_tour_url": {
+            "type": "string"
+        },
+        "distance_miles": {
+            "type": "number"
+        },
+        "featured": {
+            "type": "boolean"
+        },
+        "latitude": {
+            "type": "number"
+        },
+        "longitude": {
+            "type": "number"
+        }
+    },
+    "required": [
+        "name",
+        "type",
+        "city",
+        "state",
+        "starting_price"
+    ]
+}

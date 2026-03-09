@@ -1,0 +1,80 @@
+{
+    "name": "Assessment",
+    "type": "object",
+    "properties": {
+        "loved_one_name": {
+            "type": "string"
+        },
+        "loved_one_age": {
+            "type": "number"
+        },
+        "relationship": {
+            "type": "string"
+        },
+        "mobility": {
+            "type": "string",
+            "enum": [
+                "Fully xx Independent",
+                "Needs Minimal Assistance",
+                "Uses Walker/Cane",
+                "Uses Wheelchair",
+                "Bedridden"
+            ]
+        },
+        "cognitive_status": {
+            "type": "string",
+            "enum": [
+                "No Impairment",
+                "Mild Forgetfulness",
+                "Moderate Memory Issues",
+                "Severe Dementia/Alzheimer's"
+            ]
+        },
+        "medical_conditions": {
+            "type": "array",
+            "items": {
+                "type": "string"
+            }
+        },
+        "adl_assistance": {
+            "type": "array",
+            "items": {
+                "type": "string"
+            }
+        },
+        "care_level_recommended": {
+            "type": "string"
+        },
+        "budget_monthly": {
+            "type": "number"
+        },
+        "location_preference": {
+            "type": "string"
+        },
+        "timeline": {
+            "type": "string",
+            "enum": [
+                "Urgent (within 2 weeks)",
+                "Soon (1-3 months)",
+                "Planning ahead (3-6 months)",
+                "Just exploring"
+            ]
+        },
+        "insurance": {
+            "type": "array",
+            "items": {
+                "type": "string"
+            }
+        },
+        "special_needs": {
+            "type": "string"
+        },
+        "completed": {
+            "type": "boolean",
+            "default": false
+        }
+    },
+    "required": [
+        "loved_one_name"
+    ]
+}

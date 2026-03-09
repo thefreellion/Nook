@@ -1,0 +1,54 @@
+{
+    "name": "ChatMessage",
+    "type": "object",
+    "properties": {
+        "content": {
+            "type": "string",
+            "description": "The message content"
+        },
+        "role": {
+            "type": "string",
+            "enum": [
+                "user",
+                "assistant"
+            ],
+            "description": "Who sent the message"
+        },
+        "timestamp": {
+            "type": "string",
+            "format": "date-time",
+            "description": "When the message was sent"
+        }
+    },
+    "required": [
+        "content",
+        "role",
+        "timestamp"
+    ],
+    "rls": {
+        "read": {
+            "$or": [
+                {
+                    "created_by": "{{user.email}}"
+                },
+                {
+                    "user_condition": {
+                        "role": "admin"
+                    }
+                }
+            ]
+        },
+        "write": {
+            "$or": [
+                {
+                    "created_by": "{{user.email}}"
+                },
+                {
+                    "user_condition": {
+                        "role": "admin"
+                    }
+                }
+            ]
+        }
+    }
+}

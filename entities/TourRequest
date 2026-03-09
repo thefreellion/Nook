@@ -1,0 +1,61 @@
+{
+    "name": "TourRequest",
+    "type": "object",
+    "properties": {
+        "facility_id": {
+            "type": "string"
+        },
+        "facility_name": {
+            "type": "string"
+        },
+        "user_name": {
+            "type": "string"
+        },
+        "user_email": {
+            "type": "string"
+        },
+        "user_phone": {
+            "type": "string"
+        },
+        "preferred_date": {
+            "type": "string",
+            "format": "date"
+        },
+        "preferred_time": {
+            "type": "string"
+        },
+        "tour_type": {
+            "type": "string",
+            "enum": [
+                "In-Person",
+                "Virtual"
+            ]
+        },
+        "notes": {
+            "type": "string"
+        },
+        "status": {
+            "type": "string",
+            "enum": [
+                "Pending",
+                "Confirmed",
+                "Completed",
+                "Cancelled"
+            ],
+            "default": "Pending"
+        },
+        "loved_one_name": {
+            "type": "string"
+        },
+        "care_level_needed": {
+            "type": "string"
+        }
+    },
+    "required": [
+        "facility_id",
+        "facility_name",
+        "user_name",
+        "user_email",
+        "preferred_date"
+    ]
+}

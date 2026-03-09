@@ -1,0 +1,23 @@
+{
+    "name": "SavedFacility",
+    "type": "object",
+    "properties": {
+        "facility_id": {
+            "type": "string"
+        },
+        "facility_name": {
+            "type": "string"
+        },
+        "notes": {
+            "type": "string"
+        },
+        "compare": {
+            "type": "boolean",
+            "default": false
+        }
+    },
+    "required": [
+        "facility_id",
+        "facility_name"
+    ]
+}

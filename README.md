@@ -4,9 +4,12 @@ Installation
 
 Clone the repository and install dependencies.
 
-git clone <repo-url>
-cd NookFrontEndMVP
+git clone https://github.com/thefreellion/Nook.git
+
+cd Nook
+
 npm install
+
 Running the Development Server
 
 Start the local development server:

@@ -12,8 +12,8 @@ export default function Layout({ children, currentPageName }) {
         { label: "How It Works", page: "HowItWorks" },
         { label: "Resources", page: "Resources" },
         { label: "For Facilities", page: "AdminDashboard" },
-        { label: "ERD", page: "ERD" },
-        { label: "API Docs", page: "ApiDocs" },
+        // { label: "ERD", page: "ERD" },
+        // { label: "API Docs", page: "ApiDocs" },
     ];
 
     const isActive = (page) => currentPageName === page;

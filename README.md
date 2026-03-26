@@ -72,3 +72,5 @@ Upload the `/dist` folder to your hosting provider.
 * **React**
 * **Vite**
 * JavaScript / JSX
+
+---
